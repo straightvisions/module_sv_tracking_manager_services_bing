@@ -20,6 +20,8 @@
 				 ->load_settings()
 				 ->register_scripts()
 				 ->get_root()->add_section( $this );
+
+			$this->add_service();
 			
 			add_action('init', array($this, 'load'));
 		}
